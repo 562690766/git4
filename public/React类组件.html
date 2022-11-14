@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class Component{
+            constructor(props={},state={}){
+                this.props=props;
+                this.state=state;
+            }
+            componentWillMount(){
+                alert("componentWillMount");
+            }
+            render(){
+                alert("render");
+            }
+            componentDidMount(){
+                alert("componentDidMount")
+            }
+            shouleComponentUpdate(nextProps,nextState){
+                return true;
+            }
+        }
+
+        class App extends Component{
+            constructor(props,state){
+                super();
+            }
+            render(){
+                alert("App组件的render子类")
+            }
+        }
+        let Com=new App();
+        console.log("Com",Com);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

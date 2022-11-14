@@ -1,0 +1,15 @@
+body{
+    font:16px/2em 微软雅黑;
+    color:firebrick;
+    /* background:url('./../img/2.jpg'); */
+}
+div#app{
+    background: #09f;
+    width: 600px;
+    height: 600px;
+}
+div#app div{
+    background-color: green;
+    width: 360px;
+    height: 360px;
+}

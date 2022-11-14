@@ -1,0 +1,31 @@
+/* @value:200px;
+
+body{
+    font-size:16px;
+    color:#fff;
+}
+div#app{
+    background-color: #9f9;
+    width: 280px;
+    height: 280px;
+}
+div#app div{
+    border: 1px solid #000;
+    width:@value;
+    height:@value;
+} */
+body {
+  font-size: 14px;
+  font-family: 微软雅黑;
+  color: #f00;
+  background: url(../img/2.jpg);
+}
+@font-face {
+  font-family: 'austie_bost_wibbly-webfont';
+  src: url('../fonts/austie_bost_wibbly-webfont.ttf') format('truetype'), url('../fonts/austie_bost_wibbly-webfont.woff2') format('woff2'), url('../fonts/austie_bost_wibbly-webfont.woff') format('woff'), url('../fonts/austie_bost_wibbly-webfont.eot') format('embedded-opentype');
+  /* Add other formats as you see fit */
+}
+span {
+  font-family: 'austie_bost_wibbly-webfont';
+  font-size: 36px;
+}
